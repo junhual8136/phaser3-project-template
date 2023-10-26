@@ -1,8 +1,23 @@
-let config = {
-    width: 800px,
-    height: 600px,
-    backgroundColor: black,
-    scene: [scene1]
+import Main from "./Main.js"
+
+const config = {
+    width:512,
+    height:512,
+    backgroundColor:'#333333',
+    type: Phaser.AUTO,
+    parent: 'game',
+    scene:[Main],
+    scale: {
+        zoom:2,
+    },
+    physics: {
+        default: 'matter',
+        matter: {
+            debug:true,
+            gravity:{y:0},
+        }
+    },
+
 }
 
-let game = new Phaser.Game();
+new Phaser.Game(config);
