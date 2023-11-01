@@ -2,8 +2,9 @@ import Main from "./Main.js"
 
 const config = {
     type: Phaser.AUTO,
-    width: 700,
-    height: 500,
+    width: 1000,
+    height: 750,
+    parent: 'game',
     physics: {
         default: 'arcade',
         arcade: {
@@ -11,7 +12,6 @@ const config = {
         }
     },
     scene:[Main]
-
 }
 
 new Phaser.Game(config);
