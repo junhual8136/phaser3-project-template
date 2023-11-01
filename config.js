@@ -2,8 +2,8 @@ import Main from "./Main.js"
 
 const config = {
     type: Phaser.AUTO,
-    width: 1200,
-    height: 1600,
+    width: 700,
+    height: 500,
     physics: {
         default: 'arcade',
         arcade: {
