@@ -4,14 +4,19 @@ class Main extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('grass', 'tiles/grass.png')
-        this.load.tilemapTiledJSON('grass', 'tiles/grass.json')
+        this.load.image('cem', 'tiles/cem.png')
+        this.load.tilemapTiledJSON('cem', 'tiles/cem.json')
+
+
     }
 
 
     create() {
         // for sprites
-        this.add.image(0, 0, 'grass')
+        this.add.image(375,300, 'cem')
+
+
+
     }
 
 }
